@@ -1,0 +1,30 @@
+@CongestionTaxCalculator.Api_HostAddress = http://localhost:5026
+
+POST {{CongestionTaxCalculator.Api_HostAddress}}/tax/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "vehicleType": 1,
+  "dates": [
+    "2024-05-22T11:56:46.285Z"
+  ]
+}
+
+###
+
+POST {{CongestionTaxCalculator.Api_HostAddress}}/tax/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "vehicleType": 1,
+  "dates": [
+    "2013-05-22T12:01:23.541Z",
+    "2013-05-22T14:33:23.541Z",
+    "2013-05-22T16:54:23.541Z"
+  ]
+}
+
+###
+
